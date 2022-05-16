@@ -95,6 +95,7 @@ namespace MusicLover.ViewModels
                 readerAlbum.Close();
                 AlbumsItemsContol.ItemsSource = albums;
 
+
                 //чарты
                 string queryCharts = "SelectChartsAuditions";
                 DataTable dtCharts = new DataTable();
