@@ -72,6 +72,7 @@ namespace MusicLover.ViewModels
                 reader.Close();
                 GenresItemsContol.ItemsSource = genreList;
                 
+
                 //альбомы
                 string queryAlbum = "SelectAlbums";
                 SqlCommand sqlCommandAlbum = new SqlCommand(queryAlbum, connection);
