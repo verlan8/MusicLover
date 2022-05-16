@@ -1,0 +1,89 @@
+﻿<Page x:Class="MusicLover.ViewModels.ChosenArtistPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MusicLover.ViewModels"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ChosenArtistPage">
+
+    <Grid Background="White">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+
+        <TextBox x:Name="ArtistName"
+                 IsReadOnly="True"
+                 FontSize="18"
+                 HorizontalAlignment="Left"
+                 Width="auto"
+                 Height="auto"
+                 BorderThickness="0"/>
+
+        <!--Альбомы-->
+        <ScrollViewer x:Name="AlbumScroll" Grid.Row="2" ScrollViewer.HorizontalScrollBarVisibility="Auto" ScrollViewer.VerticalScrollBarVisibility="Hidden" >
+            <StackPanel Margin="20 0">
+                <Label x:Name="AlbumLabel" Content="Альбомы" HorizontalAlignment="Left" Width="auto" Foreground="AliceBlue"></Label>
+                <ItemsControl x:Name="AlbumsItemsContol">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Button Background="Transparent"
+                                    BorderThickness="0"
+                                    Margin="40,10,0,0"
+                                    Height="auto"
+                                    Width="auto"
+                                    Click="OpenAlbums_Click">
+                                <Border Height="300" Width="300"
+                                        CornerRadius="10"
+                                        Margin="-10,0,-10,0"
+                                        HorizontalAlignment="Left"
+                                        VerticalAlignment="Top">
+                                    <StackPanel  Margin="10">
+                                        <Image Width="250" Height="250"
+                                               Margin="0,0,0,0"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"
+                                               Source="{Binding albumImage}"
+                                               Stretch="Fill"
+                                               />
+                                        <TextBlock Text="{Binding albumName}"
+                                                   FontSize="16"
+                                                   VerticalAlignment="Bottom"
+                                                   HorizontalAlignment="Left"
+                                                   Margin="5,5,0,0"
+                                                   Width="auto"/>
+                                    </StackPanel>
+                                </Border>
+                            </Button>
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                    <ItemsControl.ItemsPanel>
+                        <ItemsPanelTemplate>
+                            <StackPanel Orientation="Horizontal"/>
+                        </ItemsPanelTemplate>
+                    </ItemsControl.ItemsPanel>
+                </ItemsControl>
+            </StackPanel>
+        </ScrollViewer>
+
+        <ScrollViewer x:Name="SongsScroll" Grid.Row="3" Background="#FF66A996">
+            <ListView x:Name="SongsLV" SelectionChanged="Tracks_SelectionChanged">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="20" Header="#" DisplayMemberBinding="{Binding chartPos}"></GridViewColumn>
+                        <GridViewColumn Width="200" Header="Артист" DisplayMemberBinding="{Binding musicArtist}"></GridViewColumn>
+                        <GridViewColumn Width="200" Header="Название" DisplayMemberBinding="{Binding musicName}"></GridViewColumn>
+                        <GridViewColumn Width="50" Header="Время" DisplayMemberBinding="{Binding musicDuration}"></GridViewColumn>
+                    </GridView>
+                </ListView.View>
+
+            </ListView>
+        </ScrollViewer>
+        
+    </Grid>
+</Page>
