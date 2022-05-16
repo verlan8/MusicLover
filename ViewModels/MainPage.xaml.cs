@@ -179,7 +179,7 @@ namespace MusicLover
             MusicTitle.ToolTip = chartsList[index].musicName;
             CheckForLike(chartsList[index].musicId);
             //PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
-            PlayMusic.Source = new Uri(@"C:\Users\rasse\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
+            PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
             PlayMusic.Play();
             PlusAudition();
         }
@@ -200,7 +200,6 @@ namespace MusicLover
             }
         }
 
-        //проверить на нажатие двух кнопок(repeat и random)
         private void NextMusic_Click(object sender, RoutedEventArgs e)
         {
             if (!randomFlag && index != chartsList.Count-1)
@@ -226,7 +225,7 @@ namespace MusicLover
                 MusicArtistTitle.Text = chartsList[index].musicArtist;
                 MusicTitle.Text = chartsList[index].musicName;
                 //PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
-                PlayMusic.Source = new Uri(@"C:\Users\rasse\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
+                PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
                 PlayMusic.Play();
                 PlusAudition();
             }
@@ -246,7 +245,7 @@ namespace MusicLover
                 MusicArtistTitle.Text = chartsList[index].musicArtist;
                 MusicTitle.Text = chartsList[index].musicName;
                 //PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
-                PlayMusic.Source = new Uri(@"C:\Users\rasse\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
+                PlayMusic.Source = new Uri(@"C:\Users\Korela\Downloads\music\" + chartsList[index].musicArtist + " - " + chartsList[index].musicName + ".mp3", UriKind.Relative);
                 PlayMusic.Play();
                 PlusAudition();
             }
@@ -382,11 +381,13 @@ namespace MusicLover
         {
             if (counterVolumeMusic == 1)
             {
+                VolumeMusicButton.BorderThickness = new Thickness(2, 2, 2, 2);
                 PlayMusic.Volume = 0;
                 flagVolume = false;
             }
             else if (counterVolumeMusic == 0)
             {
+                VolumeMusicButton.BorderThickness = new Thickness(0, 0, 0, 0);
                 PlayMusic.Volume = VolumeSlider.Value;
                 flagVolume = true;
             }

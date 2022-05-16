@@ -43,7 +43,7 @@
                     Click="SearchButton_Click">
                 <Button.Background>
                     <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\search.jpg" Stretch="Fill"/>-->
-                    <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\search.jpg" Stretch="Fill"/>
+                    <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\search.jpg" Stretch="Fill"/>
                 </Button.Background>
             </Button>
         </StackPanel>

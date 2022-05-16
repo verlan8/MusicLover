@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
 using MusicLover.models;
+using System.Configuration;
 
 namespace MusicLover.ViewModels
 {
@@ -30,8 +31,9 @@ namespace MusicLover.ViewModels
             ConnectToDB(GenreTitle);
         }
 
+        string conn = ConfigurationManager.ConnectionStrings["DBConnection"].ConnectionString;
         //SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-TJLQPJN\SQLEXPRESS;Initial Catalog = music_lover; Integrated Security = True");
-        SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-PMJ80NN\SQLEXPRESS;Initial Catalog = music_lover; Integrated Security = True");
+        //SqlConnection connection = new SqlConnection(@"Data Source=DESKTOP-PMJ80NN\SQLEXPRESS;Initial Catalog = music_lover; Integrated Security = True");
 
         List<Album> albums = new List<Album>();
 
@@ -39,6 +41,7 @@ namespace MusicLover.ViewModels
 
         private void ConnectToDB(string genre)
         {
+            SqlConnection connection = new SqlConnection(conn);
             using (connection)
             {
                 try

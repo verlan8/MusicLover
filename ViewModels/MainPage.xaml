@@ -36,7 +36,7 @@
                     Click="GoBack_Click">
                 <Button.Background>
                     <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\back.png" Stretch="Fill"/>-->
-                    <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\back.png" Stretch="Fill"/>
+                    <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\back.png" Stretch="Fill"/>
                 </Button.Background>
             </Button>
 
@@ -48,7 +48,7 @@
         <StackPanel Orientation="Vertical" Background="#FFE9BE35" Grid.Column="0" Grid.RowSpan="2">
 
             <Image Grid.Column="0" 
-                   Source="C:\Users\rasse\Downloads\MusicLover\images\logo.png"  
+                   Source="C:\Users\Korela\Downloads\MusicLover\images\logo.png"  
                    Width="170"
                    VerticalAlignment="Top"
                    Margin="0,15,0,0"
@@ -124,7 +124,7 @@
 
         <WrapPanel Height="51" Grid.Column="0" Grid.Row="2" VerticalAlignment="Bottom" Background="#FFE9BE35">
 
-            <Image Source="C:\Users\rasse\Downloads\MusicLover\images\user.png"
+            <Image Source="C:\Users\Korela\Downloads\MusicLover\images\user.png"
                    VerticalAlignment="Bottom"
                    HorizontalAlignment="Left"
                    Margin="10,10,0,4"
@@ -148,7 +148,7 @@
                     Click="ExitButton_Click">
                 <Border>
                     <Image Grid.Column="0"
-                           Source="C:\Users\rasse\Downloads\MusicLover\images\exit.png"
+                           Source="C:\Users\Korela\Downloads\MusicLover\images\exit.png"
                            VerticalAlignment="Bottom"
                            HorizontalAlignment="Right"
                            Margin="0,5,0,0"
@@ -206,7 +206,7 @@
                         Click="UnlikedMusicButton_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\noLiked.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\noLiked.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\noLiked.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -221,7 +221,7 @@
                         Click="LikedMusicButton_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\liked.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\liked.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\liked.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -235,7 +235,7 @@
                         Click="RandomMusicButton_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\random.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\random.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\random.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -249,7 +249,7 @@
                         Click="PrevMusic_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\prev.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\prev.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\prev.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -264,7 +264,7 @@
                         Click="PauseMusic_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\pause.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\pause.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\pause.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -278,7 +278,7 @@
                         Click="PauseMusic_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\play.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\play.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\play.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -292,7 +292,7 @@
                         Click="NextMusic_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\next.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\next.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\next.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -306,7 +306,7 @@
                         Click="RepeatMusicButton_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\repeat.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\repeat.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\repeat.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -346,7 +346,7 @@
                         Click="VolumeMusicButton_Click">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\volume.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\volume.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\volume.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
@@ -364,7 +364,7 @@
                 <Button HorizontalAlignment="Right" VerticalAlignment="Top" Width="30" Height="30" BorderThickness="0" Click="CloseButton_Click" Margin="0,0,0,0">
                     <Button.Background>
                         <!--<ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\close.png" Stretch="Fill"/>-->
-                        <ImageBrush ImageSource="C:\Users\rasse\Downloads\MusicLover\images\close.png" Stretch="Fill"/>
+                        <ImageBrush ImageSource="C:\Users\Korela\Downloads\MusicLover\images\close.png" Stretch="Fill"/>
                     </Button.Background>
                 </Button>
 
